@@ -116,10 +116,10 @@ document.addEventListener('click', deleteProduct)
 
 signupForm?.addEventListener('submit', async (e) => {
     e.preventDefault()
-    if (!signupForm.querySelector('#email').value.includes('@KIITstudent.ac.in')) {
-        alert('Enter Valid KIIT Email Address')
-        return
-    }
+    // if (!signupForm.querySelector('#email').value.includes('@KIITstudent.ac.in')) {
+    //     alert('Enter Valid KIIT Email Address')
+    //     return
+    // }
     if (signupForm.querySelector('#password').length < 8) {
         alert('The password should be atleast 8 characters')
         return
@@ -142,10 +142,10 @@ signupForm?.addEventListener('submit', async (e) => {
 })
 loginForm?.addEventListener('submit', async (e) => {
     e.preventDefault()
-    if (!loginForm.querySelector('#email').value.includes('@KIITstudent.ac.in')) {
-        alert('Enter Valid KIIT Email Address')
-        return
-    }
+    // if (!loginForm.querySelector('#email').value.includes('@KIITstudent.ac.in')) {
+    //     alert('Enter Valid KIIT Email Address')
+    //     return
+    // }
     if (loginForm.querySelector('#password').length < 8) {
         alert('The password should be atleast 8 characters')
         return
